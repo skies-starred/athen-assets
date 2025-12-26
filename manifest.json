@@ -126,11 +126,11 @@
       "image_data": {
         "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/image_data.json",
         "version": 1
-      },
-      "room_data": {
-        "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/room_data.json",
-        "version": 1
       }
+    },
+    "room_data": {
+      "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/room_data.json",
+      "version": 1
     }
   },
   "elements": {
@@ -141,7 +141,7 @@
   },
   "core": {
     "font": {
-      "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/core/font.ttf",
+      "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/core/inter.ttf",
       "version": 1
     },
     "icon": {
