@@ -1,3 +1,148 @@
 {
-
+  "dungeons": {
+    "map": {
+      "boss": {
+        "f1_boss": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f1_boss.png",
+          "version": 1
+        },
+        "f2_boss": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f2_boss.png",
+          "version": 1
+        },
+        "f3_boss": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f3_boss.png",
+          "version": 1
+        },
+        "f4_boss": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f4_boss.png",
+          "version": 1
+        },
+        "f5_boss": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f5_boss.png",
+          "version": 1
+        },
+        "f6_boss": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f6_boss.png",
+          "version": 1
+        },
+        "f7_boss_end": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f7_boss_end.png",
+          "version": 1
+        },
+        "f7_boss_s1": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f7_boss_s1.png",
+          "version": 1
+        },
+        "f7_boss_s2": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f7_boss_s2.png",
+          "version": 1
+        },
+        "f7_boss_s3": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f7_boss_s3.png",
+          "version": 1
+        },
+        "f7_boss_s4": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f7_boss_s4.png",
+          "version": 1
+        },
+        "f7_boss_s5": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/boss/f7_boss_s5.png",
+          "version": 1
+        }
+      },
+      "clear": {
+        "failed_room": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/clear/failed_room.png",
+          "version": 1
+        },
+        "green_check": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/clear/green_check.png",
+          "version": 1
+        },
+        "question_mark": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/clear/question_mark.png",
+          "version": 1
+        },
+        "white_check": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/clear/white_check.png",
+          "version": 1
+        }
+      },
+      "puzzles": {
+        "beam": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/beam.png",
+          "version": 1
+        },
+        "blaze": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/blaze.png",
+          "version": 1
+        },
+        "boulder": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/boulder.png",
+          "version": 1
+        },
+        "ice_fill": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/ice_fill.png",
+          "version": 1
+        },
+        "ice_path": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/ice_path.png",
+          "version": 1
+        },
+        "quiz": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/quiz.png",
+          "version": 1
+        },
+        "tp_maze": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/tp_maze.png",
+          "version": 1
+        },
+        "ttt": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/ttt.png",
+          "version": 1
+        },
+        "water": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/water.png",
+          "version": 1
+        },
+        "weirdos": {
+          "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/puzzles/weirdos.png",
+          "version": 1
+        }
+      },
+      "default_map": {
+        "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/default_map.png",
+        "version": 1
+      },
+      "marker_other": {
+        "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/marker_other.png",
+        "version": 1
+      },
+      "marker_self": {
+        "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/dungeons/map/marker_self.png",
+        "version": 1
+      }
+    }
+  },
+  "elements": {
+    "move": {
+      "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/elements/move.svg",
+      "version": 1
+    }
+  },
+  "core": {
+    "font": {
+      "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/core/font.ttf",
+      "version": 1
+    },
+    "icon": {
+      "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/core/icon.png",
+      "version": 1
+    },
+    "logo": {
+      "url": "https://raw.githubusercontent.com/skies-starred/athen-assets/main/core/logo.png",
+      "version": 1
+    }
+  }
 }
