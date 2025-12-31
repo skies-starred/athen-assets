@@ -1,0 +1,16 @@
+name: Purge CDN Cache
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge Cloudflare cache
+        run: |
+          curl -X POST https://athen.skies-starred.workers.dev/purge \
+            -H "Authorization: ${{ secrets.PURGE_TOKEN }}" \
+            -v
