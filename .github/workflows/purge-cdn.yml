@@ -1,26 +1,44 @@
 name: Purge CDN Cache
-
 on:
   push:
     branches:
       - main
-
 jobs:
   purge:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
       - name: Purge Cloudflare cache
         run: |
           curl -X GET https://athen.skies-starred.workers.dev/purge \
             -H "Authorization: ${{ secrets.PURGE_TOKEN }}" \
             -v
+
+      - name: Get commit stats
+        id: stats
+        run: |
+          FILES_CHANGED=$(git diff --name-only HEAD^ HEAD | wc -l)
+          ADDITIONS=$(git diff --shortstat HEAD^ HEAD | grep -oP '\d+(?= insertion)' || echo 0)
+          DELETIONS=$(git diff --shortstat HEAD^ HEAD | grep -oP '\d+(?= deletion)' || echo 0)
+          echo "files_changed=$FILES_CHANGED" >> $GITHUB_OUTPUT
+          echo "additions=$ADDITIONS" >> $GITHUB_OUTPUT
+          echo "deletions=$DELETIONS" >> $GITHUB_OUTPUT
       
       - name: Notify Commit
         run: |
           curl -X POST https://athen.skies-starred.workers.dev/ping/commit \
             -H "Content-Type: application/json" \
             -H "Authorization: ${{ secrets.PURGE_TOKEN }}" \
-            -d '{
-              "repo": "${{ github.repository }}",
-              "commit": "${{ github.sha }}"
-            }'
+            -d "{
+              \"repo\": \"${{ github.repository }}\",
+              \"commit\": \"${{ github.sha }}\",
+              \"commit_message\": $(echo '${{ github.event.head_commit.message }}' | jq -Rs .),
+              \"author\": \"${{ github.event.head_commit.author.name }}\",
+              \"files_changed\": ${{ steps.stats.outputs.files_changed }},
+              \"additions\": ${{ steps.stats.outputs.additions }},
+              \"deletions\": ${{ steps.stats.outputs.deletions }}
+            }"
