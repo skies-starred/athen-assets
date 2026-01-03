@@ -1,1 +1,0 @@
-All the textures in this directory (src/main/resources/assets/krypt/textures/gui/sprites/krypt/puzzles) belong to the Faithful 32x texture-pack: https://faithfulpack.net/
